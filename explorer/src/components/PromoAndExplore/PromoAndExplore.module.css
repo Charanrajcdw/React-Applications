@@ -1,0 +1,39 @@
+.promoSection {
+  display: flex;
+  padding: 0 8px;
+}
+
+.posterContent {
+  width: 42.5%;
+  padding: 11rem 0 0 9.25rem;
+}
+
+.posterContent p:first-child {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #9a4f7e;
+}
+
+.posterContent p:nth-child(2) {
+  padding: 2.25rem 0 4rem;
+  font-size: 4.5rem;
+  font-weight: 300;
+  color: #7a1655;
+}
+
+.posterContent span {
+  font-weight: 500;
+}
+
+.posterContent select {
+  margin: 1.25rem 0;
+  position: absolute;
+}
+
+.posterImage {
+  width: 57.5%;
+}
+
+.promoSection button {
+  margin-top: 7.25rem;
+}
