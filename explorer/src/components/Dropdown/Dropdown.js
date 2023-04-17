@@ -1,7 +1,14 @@
 import styles from "./Dropdown.module.css";
-import cities from "../../assets/data/places.json";
+import { getCities } from "../../services/cityServices";
+import { useEffect, useState } from "react";
 
 function Dropdown(props) {
+  const [cities, setCities] = useState([]);
+  useEffect(() => {
+    (async () => {
+      setCities(await getCities());
+    })();
+  }, []);
   return (
     <select name={props.name} id={props.id} className={styles.dropdown}>
       <option value="">Choose</option>

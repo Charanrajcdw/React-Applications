@@ -1,8 +1,15 @@
 import Card from "../Card/Card";
 import styles from "./Destinations.module.css";
-import cities from "../../assets/data/places.json";
+import { getCities } from "../../services/cityServices";
+import { useEffect,useState } from "react";
 
 function Destinations() {
+  const [cities, setCities] = useState([]);
+  useEffect(() => {
+    (async () => {
+      setCities(await getCities());
+    })();
+  }, []);
   return (
     <div className={styles.destinationsContent}>
       <h2 className={styles.destinationsTitle}>Destinations</h2>
