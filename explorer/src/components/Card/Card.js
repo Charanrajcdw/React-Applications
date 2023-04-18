@@ -1,5 +1,6 @@
 import Button from "../Button/Button";
 import styles from "./Card.module.css";
+import PropTypes from "prop-types";
 
 function Card(props) {
   return (
@@ -12,5 +13,13 @@ function Card(props) {
     </div>
   );
 }
+
+Card.propTypes = {
+  city: PropTypes.shape ({
+    city: PropTypes.string.isRequired,
+    place: PropTypes.string.isRequired,
+    shortDescription: PropTypes.string.isRequired,
+  }).isRequired,
+};
 
 export default Card;

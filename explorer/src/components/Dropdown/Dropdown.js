@@ -1,6 +1,7 @@
 import styles from "./Dropdown.module.css";
 import { getCities } from "../../services/cityServices";
 import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 
 function Dropdown(props) {
   const [cities, setCities] = useState([]);
@@ -20,5 +21,10 @@ function Dropdown(props) {
     </select>
   );
 }
+
+Dropdown.propTypes = {
+  name: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+};
 
 export default Dropdown;

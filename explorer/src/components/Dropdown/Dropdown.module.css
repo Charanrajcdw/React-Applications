@@ -4,6 +4,8 @@
   height: 70px;
   padding: 20px;
   color: #898989;
+  appearance: none;
+  background: url("./caret-down.png") no-repeat 96%/2% #ffffff;
   outline: none;
   border-width: 2px;
 }
