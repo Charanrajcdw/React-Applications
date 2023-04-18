@@ -2,6 +2,9 @@
   width: calc(100% / 3 - 20px);
   text-align: left;
   margin-bottom: 3.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 
 .cardDescription {

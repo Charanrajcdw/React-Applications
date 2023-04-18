@@ -1,5 +1,5 @@
-import Button from "../Button/Button";
-import Dropdown from "../Dropdown/Dropdown";
+import Button from "../../components/Button/Button";
+import Dropdown from "../../components/Dropdown/Dropdown";
 import styles from "./PromoAndExplore.module.css";
 
 function PromoAndExplore() {

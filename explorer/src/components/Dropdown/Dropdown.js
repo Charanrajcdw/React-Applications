@@ -11,8 +11,10 @@ function Dropdown(props) {
     })();
   }, []);
   return (
-    <select name={props.name} id={props.id} className={styles.dropdown}>
-      <option value="">Choose</option>
+    <select name={props.name} id={props.id} className={styles.dropdown} defaultValue="choose">
+      <option value="choose" disabled hidden>
+        Choose
+      </option>
       {cities.map((city, index) => (
         <option key={index} value={city.city}>
           {city.city}

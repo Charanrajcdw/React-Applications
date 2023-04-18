@@ -1,0 +1,26 @@
+.contactContainer {
+  background-color: #f7f7f7;
+  margin: 0 auto;
+  padding: 5.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formTitle {
+  color: #7a1655;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.formDescription {
+  color: #7a1655;
+  font-size: 1.55rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+.formDetails,
+.formContent {
+  width: 40.5%;
+}

@@ -1,7 +1,7 @@
-import Card from "../Card/Card";
+import DestinationCard from "../../components/DestinationCard/DestinationCard";
 import styles from "./Destinations.module.css";
 import { getCities } from "../../services/cityServices";
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 
 function Destinations() {
   const [cities, setCities] = useState([]);
@@ -16,7 +16,7 @@ function Destinations() {
       <p className={styles.destinationsDescription}>Just for you. Because you and your bike are special to us!</p>
       <div className={styles.destinationsContainer}>
         {cities.map((city, index) => (
-          <Card city={city} key={index} />
+          <DestinationCard city={city} key={index} />
         ))}
       </div>
     </div>
