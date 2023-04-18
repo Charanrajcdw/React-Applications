@@ -1,5 +1,6 @@
 import styles from "./Dropdown.module.css";
 import cities from "../../assets/data/places.json";
+import PropTypes from "prop-types";
 
 function Dropdown(props) {
   return (
@@ -13,5 +14,10 @@ function Dropdown(props) {
     </select>
   );
 }
+
+Dropdown.propTypes = {
+  name: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+};
 
 export default Dropdown;
