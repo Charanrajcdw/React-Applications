@@ -1,8 +1,8 @@
 import Button from "../Button/Button";
-import styles from "./Card.module.css";
+import styles from "./DestinationCard.module.css";
 import PropTypes from "prop-types";
 
-function Card(props) {
+const Card = (props) => {
   return (
     <div className={styles.card}>
       <img src={`images/${props.city.city}.png`} alt={props.city.city} />
@@ -12,10 +12,10 @@ function Card(props) {
       <Button value="READ MORE" />
     </div>
   );
-}
+};
 
 Card.propTypes = {
-  city: PropTypes.shape ({
+  city: PropTypes.shape({
     city: PropTypes.string.isRequired,
     place: PropTypes.string.isRequired,
     shortDescription: PropTypes.string.isRequired,

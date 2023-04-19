@@ -1,8 +1,8 @@
 import { Outlet } from "react-router-dom";
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
+import Header from "../containers/Header/Header";
+import Footer from "../containers/Footer/Footer";
 
-function MainPage() {
+const MainPage = () => {
   return (
     <div>
       <Header />
@@ -10,6 +10,6 @@ function MainPage() {
       <Footer />
     </div>
   );
-}
+};
 
 export default MainPage;

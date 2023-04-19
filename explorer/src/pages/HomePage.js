@@ -1,13 +1,13 @@
-import Destinations from "../components/Destinations/Destinations";
-import PromoAndExplore from "../components/PromoAndExplore/PromoAndExplore";
+import Destinations from "../containers/Destinations/Destinations";
+import PromoAndExplore from "../containers/PromoAndExplore/PromoAndExplore";
 
-function HomePage() {
+const HomePage = () => {
   return (
     <>
       <PromoAndExplore />
       <Destinations />
     </>
   );
-}
+};
 
 export default HomePage;
