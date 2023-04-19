@@ -2,6 +2,7 @@ import DestinationCard from "../../components/DestinationCard/DestinationCard";
 import styles from "./Destinations.module.css";
 import { getCities } from "../../services/cityServices";
 import { useEffect, useState } from "react";
+import { DESTINATIONS } from "../../constants/containerConstants";
 
 function Destinations() {
   const [cities, setCities] = useState([]);
@@ -12,8 +13,8 @@ function Destinations() {
   }, []);
   return (
     <div className={styles.destinationsContent}>
-      <h2 className={styles.destinationsTitle}>Destinations</h2>
-      <p className={styles.destinationsDescription}>Just for you. Because you and your bike are special to us!</p>
+      <h2 className={styles.destinationsTitle}>{DESTINATIONS.title}</h2>
+      <p className={styles.destinationsDescription}>{DESTINATIONS.description}</p>
       <div className={styles.destinationsContainer}>
         {cities.map((city, index) => (
           <DestinationCard city={city} key={index} />
