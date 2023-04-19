@@ -29,3 +29,13 @@
 .formContent button {
   align-self: flex-start;
 }
+
+.formMessage {
+  font-size: 1.35rem;
+  line-height: 1.5;
+  background-color: #7a1755;
+  margin-top: 2rem;
+  padding: 2rem;
+  color: #ffffff;
+  width: 50%;
+}
