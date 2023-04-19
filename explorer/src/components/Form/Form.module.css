@@ -1,0 +1,31 @@
+.formContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.formContent label {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.formContent input {
+  font-size: 1rem;
+  height: 70px;
+  padding: 20px;
+  color: #898989;
+  background-color: #f7f7f7;
+  outline: none;
+  border: 1px solid;
+  margin-bottom: 2rem;
+}
+
+.formContent select {
+  border: 1px solid;
+  background-color: #f7f7f7;
+  margin-bottom: 2rem;
+}
+
+.formContent button {
+  align-self: flex-start;
+}
