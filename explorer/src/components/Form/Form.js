@@ -1,7 +1,7 @@
-import Dropdown from "../Dropdown/Dropdown";
-import Button from "../Button/Button";
+import Dropdown from "../dropdown/Dropdown";
+import Button from "../button/Button";
 import styles from "./Form.module.css";
-import { FORM } from "../../constants/componentConstants";
+import { FORM } from "../../constants/component";
 
 function Form() {
   return (

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
-import { HEADER } from "../../constants/containerConstants";
+import { HEADER } from "../../constants/container";
 
 const Header = () => {
   return (

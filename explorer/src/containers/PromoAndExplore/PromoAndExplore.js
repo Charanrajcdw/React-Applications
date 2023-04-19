@@ -1,7 +1,7 @@
-import Button from "../../components/Button/Button";
-import Dropdown from "../../components/Dropdown/Dropdown";
+import Button from "../../components/button/Button";
+import Dropdown from "../../components/dropdown/Dropdown";
 import styles from "./PromoAndExplore.module.css";
-import { PROMO_AND_EXPLORE } from "../../constants/containerConstants";
+import { PROMO_AND_EXPLORE } from "../../constants/container";
 
 const PromoAndExplore = () => {
   return (

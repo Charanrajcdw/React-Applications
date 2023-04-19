@@ -1,5 +1,5 @@
 import styles from "./Dropdown.module.css";
-import { getCities } from "../../services/cityServices";
+import { getCities } from "../../services/city";
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 

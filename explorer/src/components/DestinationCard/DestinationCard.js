@@ -1,4 +1,4 @@
-import Button from "../Button/Button";
+import Button from "../button/Button";
 import styles from "./DestinationCard.module.css";
 import PropTypes from "prop-types";
 

@@ -1,20 +1,20 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import MainPage from "./pages/MainPage";
-import HomePage from "./pages/HomePage";
-import DetailsPage from "./pages/DetailsPage";
+import Layout from "./pages/layout/Layout";
+import HomePage from "./pages/home/Home";
+import DetailsPage from "./pages/details/Details";
 import "./App.css";
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<MainPage />}>
-          <Route index element={<HomePage />}></Route>
+      <Layout>
+        <Routes>
+          <Route exact path="/" element={<HomePage />}></Route>
           <Route exact path="/home" element={<HomePage />}></Route>
           <Route exact path="/details/*" element={<DetailsPage />}></Route>
-        </Route>
-        <Route path="*" element={<Navigate replace to="/" />}></Route>
-      </Routes>
+          <Route path="*" element={<Navigate replace to="/" />}></Route>
+        </Routes>
+      </Layout>
     </BrowserRouter>
   );
 }

@@ -1,8 +1,8 @@
-import DestinationCard from "../../components/DestinationCard/DestinationCard";
+import DestinationCard from "../../components/destinationCard/DestinationCard";
 import styles from "./Destinations.module.css";
-import { getCities } from "../../services/cityServices";
+import { getCities } from "../../services/city";
 import { useEffect, useState } from "react";
-import { DESTINATIONS } from "../../constants/containerConstants";
+import { DESTINATIONS } from "../../constants/container";
 
 function Destinations() {
   const [cities, setCities] = useState([]);

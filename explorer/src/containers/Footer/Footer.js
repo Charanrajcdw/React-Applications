@@ -1,6 +1,6 @@
-import Form from "../../components/Form/Form";
+import Form from "../../components/form/Form";
 import styles from "./Footer.module.css";
-import { FOOTER } from "../../constants/containerConstants";
+import { FOOTER } from "../../constants/container";
 
 function Footer() {
   return (
