@@ -1,0 +1,26 @@
+.destinationsContent {
+  width: 86%;
+  margin: 0 auto;
+}
+
+.destinationsContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-bottom: 1.5rem;
+}
+
+.destinationsTitle {
+  color: #7a1655;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-top: 6rem;
+}
+
+.destinationsDescription {
+  color: #7a1655;
+  font-size: 1.55rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}

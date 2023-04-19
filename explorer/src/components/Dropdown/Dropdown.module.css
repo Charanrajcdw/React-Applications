@@ -1,0 +1,11 @@
+.dropdown {
+  width: 700px;
+  font-size: 1rem;
+  height: 70px;
+  padding: 20px;
+  color: #898989;
+  appearance: none;
+  background: url("../../assets/images/caret-down.png") no-repeat 96%/2% #ffffff;
+  outline: none;
+  border-width: 2px;
+}

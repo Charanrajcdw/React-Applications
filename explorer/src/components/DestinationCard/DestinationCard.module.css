@@ -1,0 +1,30 @@
+.card {
+  width: calc(100% / 3 - 20px);
+  text-align: left;
+  margin-bottom: 3.5rem;
+}
+
+.cardDescription {
+  font-weight: 300;
+  font-size: 2.25rem;
+  margin-top: 1rem;
+}
+
+.cardName {
+  font-size: 1.25rem;
+  margin: 0.8rem 0 1.5rem;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card button {
+  padding: 0.85rem 1.6rem;
+}
+
+.cardContent {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
