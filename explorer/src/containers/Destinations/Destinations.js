@@ -1,0 +1,27 @@
+import DestinationCard from "../../components/destinationCard/DestinationCard";
+import styles from "./Destinations.module.css";
+import { getCities } from "../../services/city";
+import { useEffect, useState } from "react";
+import { DESTINATIONS } from "../../constants/container";
+
+function Destinations() {
+  const [cities, setCities] = useState([]);
+  useEffect(() => {
+    (async () => {
+      setCities(await getCities());
+    })();
+  }, []);
+  return (
+    <div className={styles.destinationsContent}>
+      <h2 className={styles.destinationsTitle}>{DESTINATIONS.title}</h2>
+      <p className={styles.destinationsDescription}>{DESTINATIONS.description}</p>
+      <div className={styles.destinationsContainer}>
+        {cities.map((city, index) => (
+          <DestinationCard city={city} key={index} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default Destinations;
