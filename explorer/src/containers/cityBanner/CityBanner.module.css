@@ -1,0 +1,36 @@
+.bannerSection {
+  display: flex;
+  padding: 0 8px;
+}
+
+.posterContent {
+  width: 41.5%;
+  font-family: "IBM Plex Sans", sans-serif;
+  padding: 13.5rem 0 0 6.75rem;
+}
+
+.posterContent p:first-child {
+  font-weight: 400;
+  font-size: 5.15rem;
+  color: #7a1655;
+}
+
+.posterContent p:nth-child(2) {
+  padding: 4.25rem 4.25rem 4rem;
+  margin: 1rem 0.25rem;
+  font-size: 4rem;
+  font-weight: 500;
+  background-color: #7a1655;
+  position: absolute;
+  width: 60%;
+  color: #ffffff;
+}
+
+.posterContent p:nth-child(3) {
+  margin: 21.25rem 0 0;
+  font-size: 3.5rem;
+}
+
+.posterImage {
+  width: 58.5%;
+}

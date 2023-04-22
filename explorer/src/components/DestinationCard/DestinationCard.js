@@ -1,17 +1,22 @@
+import { useNavigate } from "react-router-dom";
 import Button from "../button/Button";
 import styles from "./DestinationCard.module.css";
 import PropTypes from "prop-types";
 
 function Card(props) {
+  const navigate = useNavigate();
+  function handleReadMoreClick() {
+    navigate(`/details/${props.city.city.toLowerCase()}`);
+  }
   return (
     <div className={styles.card}>
       <div>
-        <img src={`images/${props.city.city}.png`} alt={props.city.city} />
+        <img src={`/images/${props.city.city}.png`} alt={props.city.city} />
         <p className={styles.cardDescription}>{props.city.place}</p>
         <h5 className={styles.cardName}>{props.city.city}</h5>
         <p className={styles.cardContent}>{props.city.shortDescription}</p>
       </div>
-      <Button value="READ MORE" />
+      <Button value="READ MORE" handleClick={handleReadMoreClick} />
     </div>
   );
 }

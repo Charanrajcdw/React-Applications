@@ -11,7 +11,7 @@ function Dropdown(props) {
     })();
   }, []);
   return (
-    <select name={props.name} id={props.id} className={styles.dropdown} defaultValue="" ref={props.refValue}>
+    <select name={props.name} id={props.id} className={styles.dropdown} defaultValue="" ref={props.refValue} onChange={props.handleClick}>
       <option value="" disabled hidden>
         Choose
       </option>
