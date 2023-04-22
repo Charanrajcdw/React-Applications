@@ -2,26 +2,26 @@ import Destinations from "../../containers/destinations/Destinations";
 import CityBanner from "../../containers/cityBanner/CityBanner";
 import { getCities, getCity, getSimilarCities } from "../../services/city";
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import styles from "./Details.module.css";
 
 function DetailsPage() {
   const [cities, setCities] = useState([]);
   const [cityDetails, setCityDetails] = useState({});
-  const CURRENT_CITY = useLocation().pathname.split("/")[2].toLowerCase();
-  const CAPITALIZED_CURRENT_CITY = CURRENT_CITY.charAt(0).toUpperCase() + CURRENT_CITY.slice(1);
+  const { city } = useParams();
+  const CAPITALIZED_CURRENT_CITY = city.charAt(0).toUpperCase() + city.slice(1);
 
   useEffect(() => {
     (async () => {
       let allCities = await getCities();
-      let similarCities = await getSimilarCities(CURRENT_CITY);
-      let cityDetailsFromAPI = await getCity(CURRENT_CITY);
+      let similarCities = await getSimilarCities(city);
+      let cityDetailsFromAPI = await getCity(city);
 
       allCities = allCities.filter((city) => similarCities.some((similarCity) => city.city === similarCity));
       setCities(allCities);
       setCityDetails(cityDetailsFromAPI);
     })();
-  }, [CURRENT_CITY]);
+  }, [city]);
 
   return (
     <>

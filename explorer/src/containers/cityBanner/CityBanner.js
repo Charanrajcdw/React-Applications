@@ -1,15 +1,26 @@
 import styles from "./CityBanner.module.css";
+import { getWeather } from "../../services/weather";
+import { useEffect, useState } from "react";
 
 const CityBanner = (props) => {
+  const [weather, setWeather] = useState("25°C");
+  const cityName = props.city;
+
+  useEffect(() => {
+    (async () => {
+      setWeather(await getWeather(cityName.toLowerCase()));
+    })();
+  }, [cityName]);
+
   return (
     <div className={styles.bannerSection}>
       <div className={styles.posterContent}>
-        <p>{props.city}</p>
+        <p>{cityName}</p>
         <p>{props.description}</p>
-        <p>32°C</p>
+        <p>{weather}</p>
       </div>
       <div className={styles.posterImage}>
-        <img src={`/images/${props.city}.png`} alt={props.city} width="100%" />
+        <img src={`/images/${cityName}.png`} alt={cityName} width="100%" />
       </div>
     </div>
   );
